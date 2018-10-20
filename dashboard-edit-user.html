@@ -205,7 +205,7 @@
                             <ul class="list-unstyled" style="font-size: 19px;">
 
                                 <li class="list-group-item light-even">
-                                    <a href="#" class="nounderline font-weight-bold">ثبت لینک</a>
+                                    <a href="#" class="nounderline">ثبت لینک</a>
                                 </li>
 
                                 <li class="list-group-item light-even">
@@ -229,7 +229,7 @@
                                 </li>
 
                                 <li class="list-group-item light-even">
-                                    <a href="#" class="nounderline">ویرایش اطلاعات کاربری</a>
+                                    <a href="#" class="nounderline font-weight-bold">ویرایش اطلاعات کاربری</a>
                                 </li>
 
                                 <li class="list-group-item light-even">
@@ -254,99 +254,75 @@
               <div class="row ml-auto mr-auto mt-2 mb-4 border border-info rounded">
 
                   <div class="col-12">
-                      <h1 class="mt-3 text-center bg-light rounded p-2">ثبت لینک</h1>
+                      <h1 class="mt-3 text-center bg-light rounded p-2">ویرایش اطلاعات کاربری</h1>
                       <hr>
                   </div>
 
                   <div class="col-12" style="font-size: 1.1rem;">
 
                       <form class="m-4">
-                            <!-- post type -->
+
+                            <!-- first name -->
                             <div class="form-group row">
-                              <label for="link-type" class="col-md-2 col-3">نوع لینک:</label>
+                                <label for="firstname" class="col-xl-2 col-4">نام:</label>
 
-                              <div class="col-md-4 col-6">
-                                  <select class="form-control" id="link-type">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                              </div>
-                            </div><!-- post type -->
-
-                            <!-- post title -->
-                            <div class="form-group row">
-                                <label for="title" class="col-md-2 col-3">عنوان (نام):</label>
-
-                                <div class="col-md-4 col-6">
-                                    <input type="text" class="form-control" id="title">
+                                <div class="col-xl-4 col-8">
+                                    <input type="text" class="form-control" id="firstname">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- first name -->
 
-                            <!-- post category -->
+                            <!-- last name -->
                             <div class="form-group row">
-                              <label for="link-type" class="col-md-2 col-3">دسته بندی:</label>
+                                <label for="lastname" class="col-xl-2 col-4">نام خانوادگی:</label>
 
-                              <div class="col-md-4 col-6">
-                                  <select class="form-control" id="link-type">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                              </div>
-                            </div><!-- post type -->
-
-                            <!-- post ID -->
-                            <div class="form-group row">
-                                <label for="link" class="col-md-2 col-3">ای دی کانال:</label>
-
-                                <div class="col-md-4 col-6">
-                                    <input type="text" class="form-control" id="link">
+                                <div class="col-xl-4 col-8">
+                                    <input type="text" class="form-control" id="lastname">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- last name -->
 
-                            <!-- post description -->
+                            <!-- phone number -->
                             <div class="form-group row">
-                                <label for="description" class="col-md-2 col-3">توضیحات:</label>
+                                <label for="phone-number" class="col-xl-2 col-4">تلفن همراه:</label>
 
-                                <div class="col-md-6 col-8">
-                                    <textarea class="form-control" id="description" rows="4"></textarea>
+                                <div class="col-xl-4 col-8">
+                                    <input type="tel" class="form-control" id="phone-number">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- last name -->
 
-                            <!-- members-number -->
+                            <!-- email -->
                             <div class="form-group row">
-                                <label for="members-number" class="col-md-2 col-3">اعضا (اختیاری):</label>
+                                <label for="email" class="col-xl-2 col-4">ایمیل:</label>
 
-                                <div class="col-md-2 col-4">
-                                    <input type="number" class="form-control" id="members-number">
+                                <div class="col-xl-4 col-8">
+                                    <input type="email" class="form-control" id="email">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- email -->
 
-                            <!-- year-created -->
+                            <!-- password1 -->
                             <div class="form-group row">
-                                <label for="year-created" class="col-md-2 col-3">سال ساخت (اختیاری):</label>
+                                <label for="password1" class="col-xl-2 col-4">رمز عبور</label>
 
-                                <div class="col-md-2 col-4">
-                                    <input type="number" class="form-control" id="year-created">
+                                <div class="col-xl-4 col-8">
+                                    <input type="password" class="form-control" id="password1">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- password1 -->
 
-                            <!-- image -->
+                            <!-- password2 -->
                             <div class="form-group row">
-                                <label for="image" class="col-md-2 col-3">عکس:</label>
+                                <label for="password2" class="col-xl-2 col-4">تکرار رمز عبور</label>
 
-                                <div class="file-field col-md-4 col-8">
-                                    <input type="file" class="form-control" id="image">
+                                <div class="col-xl-4 col-8">
+                                    <input type="password" class="form-control" id="password2">
                                 </div>
-                            </div><!-- post title -->
+                            </div><!-- password2 -->
 
                             <!-- submit -->
-                            <button class="btn btn-primary mt-2" type="submit">ثبت لینک</button>
+                            <div class="form-group row">
+                                <div class="cold-xl-4 col-8 offset-xl-2 offset-4 mt-3">
+                                    <button class="btn btn-info mr-1" type="submit">ویرایش</button>
+                                    <a class="btn btn-secondary" href="#">برگشت</a>
+                                </div>
+                            </div>
 
                       </form>
 
